@@ -19,3 +19,11 @@
 ### Write the session
 
 ![Session writing view](wireframes/writeSession-5.png)
+
+### View Statistics
+
+![View the written sessions](wireframes/Stats-6.png)
+
+### View Goals
+
+![View long term goal progress](wireframes/Goals-7.png)
