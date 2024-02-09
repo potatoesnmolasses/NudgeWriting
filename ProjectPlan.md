@@ -71,6 +71,8 @@
 ### Week 8 - Web Services
 #### User story focus: Generate Story Prompts 
 - [ ] Consume RESTful Web Service in IntelliJ 
+- [ ] Expand on active Session modes - Zen and Accountability
+- [ ] Implement "punishment" for Session grace period timeout
 - [ ] Update time log journal
 
 ### Week 9 (Start of the team project)
