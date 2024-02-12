@@ -43,4 +43,4 @@ The screenshot below was taken from the current Write or Die website:
 
 ### [Project Plan](ProjectPlan.md)
 
-#### [TimeLog Journal](timeLog.md)
+#### [Journal](timeLog.md)
