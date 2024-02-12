@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
  * @author jgruel
  */
 public class NudgeSession {
+    private int id;
     private int wordCount;
     private int sessionLength;
     private int wpm;
@@ -16,6 +17,21 @@ public class NudgeSession {
     private LocalDateTime sessionDate;
     //TODO: multiple goals per session? private ArrayList<String>;
 
+    /**
+     * get ID
+     * @return id session ID
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * set ID
+     * @param id session id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
     /**
      * no argument constructor for the Session object
      */
