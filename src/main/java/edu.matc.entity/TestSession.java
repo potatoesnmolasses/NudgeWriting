@@ -1,4 +1,4 @@
-package edu.match.entity;
+package edu.matc.entity;
 
 /**
  * Represents a webapp writing session

@@ -1,23 +1,25 @@
 package edu.matc.entity;
 
 
+import java.time.LocalDateTime;
+
 /**
  * Represents a webapp writing session
  * @author jgruel
  */
-public @Data class Session {
+public class NudgeSession {
     private int wordCount;
     private int sessionLength;
     private int wpm;
     private String goalName;
     private String sessionTitle;
-    private DateTime sessionDate;
-    private ArrayList<String>;
+    private LocalDateTime sessionDate;
+    //TODO: multiple goals per session? private ArrayList<String>;
 
     /**
      * no argument constructor for the Session object
      */
-    public Session() {
+    public NudgeSession() {
     }
 
     /**
@@ -106,7 +108,7 @@ public @Data class Session {
      * Get session start datetime
      * @return sessionDate the session date and time
      */
-    public DateTime getSessionDate() {
+    public LocalDateTime getSessionDate() {
         return sessionDate;
     }
 
@@ -114,7 +116,7 @@ public @Data class Session {
      * set session start date and time
      * @param sessionDate the session date and time
      */
-    public void setSessionDate(DateTime sessionDate) {
+    public void setSessionDate(LocalDateTime sessionDate) {
         this.sessionDate = sessionDate;
     }
 }
