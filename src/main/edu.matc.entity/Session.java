@@ -1,5 +1,5 @@
 package edu.matc.entity;
-import lombok.Data;
+
 
 /**
  * Represents a webapp writing session
@@ -12,6 +12,7 @@ public @Data class Session {
     private String goalName;
     private String sessionTitle;
     private DateTime sessionDate;
+    private ArrayList<String>;
 
     /**
      * no argument constructor for the Session object

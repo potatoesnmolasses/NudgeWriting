@@ -1,5 +1,4 @@
-package edu.matc.entity;
-import lombok.Data;
+package edu.match.entity;
 
 /**
  * Represents a webapp writing session
@@ -12,4 +11,5 @@ public @Data class TestSession {
     private String goalName;
     private String sessionTitle;
     private DateTime sessionDate;
+    private ArrayList<String> testList;
 }
