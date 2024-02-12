@@ -1,19 +1,32 @@
 package edu.matc.entity;
 
 
+import jakarta.persistence.*;
+import org.hibernate.annotations.GenericGenerator;
+
 import java.time.LocalDateTime;
 
 /**
  * Represents a webapp writing session
  * @author jgruel
  */
+@Entity
+@Table(name = "session")
 public class NudgeSession {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
     private int id;
+    @Column(name = "word_count")
     private int wordCount;
+    @Column(name = "length")
     private int sessionLength;
+    @Column(name = "wpm")
     private int wpm;
-    private String goalName;
+   //TODO private String goalName;
+    @Column(name = "title")
     private String sessionTitle;
+    @Column(name = "session_date")
     private LocalDateTime sessionDate;
     //TODO: multiple goals per session? private ArrayList<String>;
 
@@ -86,23 +99,6 @@ public class NudgeSession {
         this.wpm = wpm;
     }
 
-    /**
-     * Get session goalName
-     * @return goalName the session goal name
-     */
-    public String getGoalName() {
-        return goalName;
-    }
-
-    /**
-     * set session goal
-     * @param goalName the session goals associated
-     * potential TODO: depending on future setup of goals, consider making this param a list
-     *                 instead, so each session can be a part of multiple goals
-     */
-    public void setGoalName(String goalName) {
-        this.goalName = goalName;
-    }
 
     /**
      * Get session wordcount
