@@ -28,6 +28,22 @@ public class NudgeSession {
     private String sessionTitle;
     @Column(name = "session_date")
     private LocalDateTime sessionDate;
+
+    /**
+     * NudgeSession constructor with all parameters
+     * @param wordCount the word count
+     * @param sessionLength the session length in minutes
+     * @param wpm the words per minute
+     * @param sessionTitle the title of the session
+     * @param sessionDate the date and time of the session
+     */
+    public NudgeSession(int wordCount, int sessionLength, int wpm, String sessionTitle, LocalDateTime sessionDate) {
+        this.wordCount = wordCount;
+        this.sessionLength = sessionLength;
+        this.wpm = wpm;
+        this.sessionTitle = sessionTitle;
+        this.sessionDate = sessionDate;
+    }
     //TODO: multiple goals per session? private ArrayList<String>;
 
     /**
