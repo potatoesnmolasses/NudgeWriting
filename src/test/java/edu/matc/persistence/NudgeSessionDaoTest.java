@@ -54,7 +54,7 @@ class NudgeSessionDaoTest {
         nudgeSession = new NudgeSessionDao();
         LocalDateTime now = LocalDateTime.now();
         NudgeSession testSession = new NudgeSession(500, 25,
-                20, "Test2", now);
+                "Test2", now);
 
         int insertedSessionID = nudgeSession.insert(testSession);
         //test not equal 0 and that title is correct

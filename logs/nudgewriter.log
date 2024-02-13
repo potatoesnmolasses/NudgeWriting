@@ -1,0 +1,10 @@
+[INFO ] 2024-02-13 13:42:42.574 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-13 13:42:49.557 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-13 13:42:49.919 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@2acca224, edu.matc.entity.NudgeSession@5ddb302]
+[INFO ] 2024-02-13 13:42:50.039 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-13 13:42:50.363 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-13 13:42:50.440 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-13 13:42:50.986 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-13 13:42:51.476 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-13 13:42:51.611 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-13 13:42:51.845 [main] Database - Connection to SQL successful

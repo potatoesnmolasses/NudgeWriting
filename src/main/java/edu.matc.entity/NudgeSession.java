@@ -23,7 +23,7 @@ public class NudgeSession {
     private int sessionLength;
     @Column(name = "wpm")
     private int wpm;
-   //TODO private String goalName;
+   //TODO "tag" the session with a goal/goals. private String goalName;
     @Column(name = "title")
     private String sessionTitle;
     @Column(name = "session_date")
@@ -33,14 +33,13 @@ public class NudgeSession {
      * NudgeSession constructor with all parameters
      * @param wordCount the word count
      * @param sessionLength the session length in minutes
-     * @param wpm the words per minute
      * @param sessionTitle the title of the session
      * @param sessionDate the date and time of the session
      */
-    public NudgeSession(int wordCount, int sessionLength, int wpm, String sessionTitle, LocalDateTime sessionDate) {
+    public NudgeSession(int wordCount, int sessionLength, String sessionTitle, LocalDateTime sessionDate) {
         this.wordCount = wordCount;
         this.sessionLength = sessionLength;
-        this.wpm = wpm;
+        calculateWpm(sessionLength, wordCount);
         this.sessionTitle = sessionTitle;
         this.sessionDate = sessionDate;
     }
@@ -76,7 +75,7 @@ public class NudgeSession {
     }
 
     /**
-     * set session wordcount
+     * set session word count
      * @param wordCount the session wordcount
      */
     public void setWordCount(int wordCount) {
@@ -146,5 +145,14 @@ public class NudgeSession {
      */
     public void setSessionDate(LocalDateTime sessionDate) {
         this.sessionDate = sessionDate;
+    }
+
+    /**
+     * calculate the words per minute for the session
+     * @param sessionLength the length of the session in minutes
+     * @param wordCount the words produced in the session
+     */
+    public void calculateWpm(int sessionLength, int wordCount) {
+        this.wpm = wordCount / sessionLength;
     }
 }
