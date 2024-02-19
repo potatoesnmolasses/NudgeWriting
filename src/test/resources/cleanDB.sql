@@ -16,19 +16,20 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `session`
+-- Table structure for table `session_test`
 --
-
 DROP TABLE IF EXISTS `session`;
+DROP TABLE IF EXISTS `session_test`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `session` (
+CREATE TABLE `session_test` (
   `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(100) DEFAULT NULL,
   `word_count` int DEFAULT NULL,
   `length` int DEFAULT NULL,
   `wpm` int DEFAULT NULL,
   `session_date` datetime DEFAULT NULL,
+  `user_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `sessions_date_time_uindex` (`session_date`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -38,10 +39,10 @@ CREATE TABLE `session` (
 -- Dumping data for table `session`
 --
 
-LOCK TABLES `session` WRITE;
-/*!40000 ALTER TABLE `session` DISABLE KEYS */;
-INSERT INTO `session` VALUES (1,'Test',44,5,9,'2024-02-12 00:00:00'),(2,'Test2',500,25,20,'2024-02-12 23:54:12');
-/*!40000 ALTER TABLE `session` ENABLE KEYS */;
+LOCK TABLES `session_test` WRITE;
+/*!40000 ALTER TABLE `session_test` DISABLE KEYS */;
+INSERT INTO `session_test` VALUES (1,'Test',44,5,9,'2024-02-12 00:00:00',1),(2,'Test2',500,25,20,'2024-02-12 23:54:12',2);
+/*!40000 ALTER TABLE `session_test` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

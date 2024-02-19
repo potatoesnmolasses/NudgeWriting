@@ -10,8 +10,9 @@ import java.time.LocalDateTime;
  * Represents a webapp writing session
  * @author jgruel
  */
-@Entity
-@Table(name = "session")
+@Entity(name = "NudgeSession")
+@Table(name = "session_test")
+//TODO to deploy, change database and table name
 public class NudgeSession {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -28,6 +29,27 @@ public class NudgeSession {
     private String sessionTitle;
     @Column(name = "session_date")
     private LocalDateTime sessionDate;
+    @ManyToOne
+    private User user;
+
+
+    /**
+     * NudgeSession constructor with all parameters
+     * @param wordCount the word count
+     * @param sessionLength the session length in minutes
+     * @param sessionTitle the title of the session
+     * @param sessionDate the date and time of the session
+     * @param user the user
+     */
+    public NudgeSession(int wordCount, int sessionLength, String sessionTitle, LocalDateTime sessionDate, User user) {
+        this.wordCount = wordCount;
+        this.sessionLength = sessionLength;
+        calculateWpm(sessionLength, wordCount);
+        this.sessionTitle = sessionTitle;
+        this.sessionDate = sessionDate;
+        this.user = user;
+    }
+    //TODO: multiple goals per session? private ArrayList<String>;
 
     /**
      * NudgeSession constructor with all parameters
@@ -43,7 +65,22 @@ public class NudgeSession {
         this.sessionTitle = sessionTitle;
         this.sessionDate = sessionDate;
     }
-    //TODO: multiple goals per session? private ArrayList<String>;
+
+    /**
+     * get user
+     * @return user the user
+     */
+    public User getUser() {
+        return user;
+    }
+
+    /**
+     * set user
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     /**
      * get ID
