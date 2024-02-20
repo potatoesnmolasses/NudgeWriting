@@ -5,6 +5,8 @@ import edu.matc.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,6 +50,32 @@ public class UserDaoTest {
         assertNotEquals(0, insertedUserId);
         User insertedUser = userDao.getById(insertedUserId);
         assertEquals("Kia", insertedUser.getFirstName());
+
+    }
+
+    @Test
+    void addSession() {
+        userDao = new UserDao();
+        LocalDateTime now = LocalDateTime.now();
+        NudgeSession nudge = new NudgeSession(1500, 45, "summary", now);
+        User retrievedUser = userDao.getById(2);
+        retrievedUser.addSession(nudge);
+
+        List<NudgeSession> sessionList = retrievedUser.getSessionList();
+        assertEquals(2, sessionList.size());
+    }
+
+    @Test
+    void deleteSession() {
+        userDao = new UserDao();
+        User user = userDao.getById(1);
+        List <NudgeSession> sessionList = user.getSessionList();
+        NudgeSession nudgeToDelete = sessionList.get(0);
+        //userDao.getById(1).removeSession(nudgeToDelete);
+        user.removeSession(nudgeToDelete);
+        List <NudgeSession> testList = user.getSessionList();
+
+        assertEquals(0, testList.size());
 
     }
 

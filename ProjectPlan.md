@@ -8,50 +8,52 @@
 - [X] Weekly time log journal
 
 ### Week 3
-- [ ] Research possible Web Services/APIs to use
+- [X] Research possible Web Services/APIs to use
 - [X] List technologies, versions and how they will be used
-- [ ] Write project plan
+- [X] Write project plan
 - [X] Document user stories and select MVP stories 
-- [ ] Confirm MVP stories meet Ent Java indie project objectives
+- [X] Confirm MVP stories meet Ent Java indie project objectives
 - [X] Design screens (complete 2/6, with some changes necessary)
-- [ ] Triple-check for Checkpoint 1
-- [ ] Update time log journal
+- [X] Triple-check for Checkpoint 1
+- [X] Update time log journal
 
 ### Week 4 - Hibernate
 #### User story focus: Find written session by name 
-- [ ] Start up database design
-- [ ] Create the dev version of the database - Session table
-- [ ] Create Session entity
-- [ ] Create a class to perform CRUD on session records - SessionDao 
-- [ ] Create the config files for the DB connection info (dev and test)
-- [ ] Create a test version of the database for unit testing
-- [ ] Create unit tests for the SessionDao
-- [ ] Create a class for the DB connection business
-- [ ] Create JSP for finding sessions
-- [ ] Create JSP for session search results
-- [ ] Create controller - send to session search results jsp
-- [ ] Create controller - search sessions
-- [ ] Update time log journal
-- [ ] Determine feasibility/confirm goals for Create Long Term Writing Goals user story 
+- [X] Start up database design
+- [X] Create the dev version of the database - User table
+- [X] Create User entity
+- [X] Create a class to perform CRUD on session records - UserDao 
+- [X] Create the config files for the DB connection info (dev and test)
+- [X] Create a test version of the database for unit testing
+- [X] Create unit tests for the UserDao
+- [X] Test the UserDao
+- [X] Create a class for the DB connection business
+- [X] Create JSP for finding sessions
+- [X] Create JSP for session search results
+- [X] Create controller - send to session search results jsp
+- [X] Create controller - search sessions
+- [X] Update time log journal
+- [X] Research ways to incorporate AI prompts
 
 ### Week 5 - One-to-many Hibernate
 #### User story focus: View session goals
-- [ ] Start up database design for writing session goals
-- [ ] Create the dev version of the database - Goal table
-- [ ] Create Goal entity
-- [ ] Create a class to perform CRUD on Goals - GoalDao 
-- [ ] Create the config files for the DB connection info (dev and test)
-- [ ] Create a test version of the database for unit testing
-- [ ] Create unit tests for the GoalDao
-- [ ] Create a class for the DB connection business
-- [ ] Create JSP for finding goals
-- [ ] Create JSP for Goal search results
-- [ ] Create controller - send to Goal search results jsp
-- [ ] Create controller - search Goals
-- [ ] Update time log journal
+- [X] Start up database design for writing sessions
+- [X] Create the dev version of the database - NudgeSession table
+- [X] Create NudgeSession entity
+- [X] Create a class to perform CRUD on Goals - GoalDao 
+- [X] Create the config files for the DB connection info (dev and test)
+- [X] Create unit tests for the NudgeSessionDao
+- [X] Create a class for the DB connection business
+- [X] Add session results to User search results JSP
+- [X] Update time log journal
+- [X] Determine feasibility/confirm goals for Create Long Term Writing Goals user story 
+- [X] Work out logic that could work for grace period countdown
+- [X] Work out code to implement text field for nudge sessions
 
 
 ### Week 6 - AWS
+- [ ] Create controller - send to NudgeSession search results jsp
+- [ ] Replicate above steps for Goals (possible many-to-many with NudgeSession in the middle)
 - [ ] Fully test SessionDao - implementing Hibernate
 - [ ] Fully test GoalDao - implementing Hibernate
 - [ ] Implement Log4J for logging
