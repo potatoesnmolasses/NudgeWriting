@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 /**
@@ -28,8 +29,8 @@ public class User {
     private String lastName;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<NudgeSession> sessions = new ArrayList<>();
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private List<NudgeSession> sessionList = new ArrayList<NudgeSession>();
 
     /**
      * no argument constructor
@@ -51,36 +52,36 @@ public class User {
 
     /**
      * get the list of sessions
-     * @return sessions the list of sessions
+     * @return sessionList the list of sessions
      */
-    public List<NudgeSession> getSessions() {
-        return sessions;
+    public List<NudgeSession> getSessionList() {
+        return sessionList;
     }
 
     /**
      * set the list of sessions
-     * @param sessions the list of sessions
+     * @param sessionList the list of sessions
      */
-    public void setSessions(List<NudgeSession> sessions) {
-        this.sessions = sessions;
+    public void setSessionList(List<NudgeSession> sessionList) {
+        this.sessionList = sessionList;
     }
 
     /**
      * Add a session to the list of sessions
-     * @param session the session to add
+     * @param newSession the session to add
      */
-    public void addSession(NudgeSession session) {
-        sessions.add(session);
-        session.setUser(this);
+    public void addSession(NudgeSession newSession) {
+        sessionList.add(newSession);
+        newSession.setUser(this);
     }
 
     /**
      * remove a session from the session list
-     * @param session the session to remove
+     * @param deleteSession the session to remove
      */
-    public void removeSession(NudgeSession session) {
-        sessions.remove(session);
-        session.setUser(null);
+    public void removeSession(NudgeSession deleteSession) {
+        sessionList.remove(deleteSession);
+        deleteSession.setUser(null);
     }
 
     /**
@@ -180,8 +181,17 @@ public class User {
     }
 
     /**
+     * Gets age from date of birth.
      *
-     * @return
+     * @return age the user's age
+     * */
+    public int getAge() {
+        return (int) ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now());
+    }
+    /**
+     *
+     * print a string to the console
+     * @return string
      */
     @Override
     public String toString() {

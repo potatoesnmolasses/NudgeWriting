@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.NudgeSession;
+import edu.matc.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import edu.matc.persistence.Database;
@@ -31,6 +32,7 @@ class NudgeSessionDaoTest {
         NudgeSession retrievedSession = nudgeSession.getById(1);
         assertNotNull(retrievedSession);
         assertEquals("Test", retrievedSession.getSessionTitle());
+        assertEquals(2, retrievedSession.getUser().getId());
     }
 
     /**
@@ -53,15 +55,21 @@ class NudgeSessionDaoTest {
     void insertSuccess() {
         nudgeSession = new NudgeSessionDao();
         LocalDateTime now = LocalDateTime.now();
-        NudgeSession testSession = new NudgeSession
-                (500, 25,
-                "Test2", now);
 
-        int insertedSessionID = nudgeSession.insert(testSession);
-        //test not equal 0 and that title is correct
-        assertNotEquals(0, insertedSessionID);
-        NudgeSession sessionToInsert = nudgeSession.getById(insertedSessionID);
-        assertEquals("Test2", sessionToInsert.getSessionTitle());
+        //get a user
+        UserDao userDao = new UserDao();
+        User user = userDao.getById(4);
+        //create a session under that user
+        NudgeSession nudgeSessionToInsert = new NudgeSession(500, 25,
+                "Chapter 4", now, user);
+        //insert the session
+        int insertSessionId = nudgeSession.insert(nudgeSessionToInsert);
+        //retrieve the session
+        NudgeSession retrievedSession = nudgeSession.getById(insertSessionId);
+        //verify
+        assertNotNull(retrievedSession);
+        assertEquals(nudgeSessionToInsert.getSessionTitle(), retrievedSession.getSessionTitle());
+        assertEquals("Dianne", retrievedSession.getUser().getFirstName());
     }
 
     /**
@@ -75,6 +83,8 @@ class NudgeSessionDaoTest {
         assertNull(nudgeSession.getById(1));
     }
 
+
+
     /**
      * test the getAll() method
      */
@@ -82,7 +92,7 @@ class NudgeSessionDaoTest {
     void getAll() {
         nudgeSession = new NudgeSessionDao();
         List<NudgeSession> sessions = nudgeSession.getAll();
-        assertEquals(2, sessions.size());
+        assertEquals(3, sessions.size());
     }
 
     /**

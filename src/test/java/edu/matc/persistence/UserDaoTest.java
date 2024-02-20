@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.NudgeSession;
 import edu.matc.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -53,15 +54,31 @@ public class UserDaoTest {
     @Test
     void delete() {
         userDao = new UserDao();
-        userDao.delete(userDao.getById(2));
-        assertNull(userDao.getById(2));
+        userDao.delete(userDao.getById(3));
+        assertNull(userDao.getById(3));
+    }
+
+    @Test
+    void deleteWithSessions() {
+        userDao = new UserDao();
+        //Get user and sessions from user
+        User userToDelete = userDao.getById(3);
+        List<NudgeSession> sessionList = userToDelete.getSessionList();
+        int sessionNumber = sessionList.get(0).getId();
+        //Delete user
+        userDao.delete(userToDelete);
+        assertNull(userDao.getById(3));
+        //verify
+        NudgeSessionDao sessionDao = new NudgeSessionDao();
+        assertNull(sessionDao.getById(2));
+
     }
 
     @Test
     void getAll() {
         userDao = new UserDao();
         List<User> users = userDao.getAll();
-        assertEquals(6, users.size());
+        assertEquals(5, users.size());
     }
 
     @Test
@@ -69,7 +86,7 @@ public class UserDaoTest {
         userDao = new UserDao();
         List<User> users = userDao.getByPropertyLike("lastName", "Curry");
         assertEquals(1, users.size());
-        assertEquals(3, users.get(0).getId());
+        assertEquals(2, users.get(0).getId());
     }
 
     @Test
