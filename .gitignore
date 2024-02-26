@@ -35,7 +35,8 @@
 /target/
 /logs/
 /lib/
-hibernate.cfg.xml
+main/resources/hibernate.cfg.xml
+/dba/dump.sql
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
