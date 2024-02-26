@@ -59,7 +59,7 @@ CREATE TABLE `session_test` (
   `user_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `sessions_date_time_uindex` (`session_date`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `session_test` (
 
 LOCK TABLES `session_test` WRITE;
 /*!40000 ALTER TABLE `session_test` DISABLE KEYS */;
-INSERT INTO `session_test` VALUES (3,'Test',44,5,9,'2024-02-12 15:03:45',2),(4,'Test2',500,25,20,'2024-02-14 15:04:27',3),(5,'NovelSession',2000,60,34,'2024-02-19 15:05:39',1);
+INSERT INTO `session_test` VALUES (1,'Test',44,5,9,'2024-02-12 15:03:45',2),(2,'Test2',500,25,20,'2024-02-14 15:04:27',3),(3,'NovelSession',2000,60,34,'2024-02-19 15:05:39',1),(6,'Chapter 4',500,25,20,'2024-02-24 00:45:36',4);
 /*!40000 ALTER TABLE `session_test` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,7 +97,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Joe','Smith','jcoyne','supersecret1','1964-03-31'),(3,'Barney','Curry','bcurry','supersecret3','1947-11-11'),(4,'Karen','Mack','kmack','supersecret4','1986-07-08'),(5,'Dianne','Klein','dklein','supersecret5','1991-01-22'),(6,'Dawn','Tillman','dtillman','supersecret6','1979-08-30');
+INSERT INTO `user` VALUES (1,'Joe','Coyne','jcoyne','supersecret1','1964-03-31'),(2,'Barney','Curry','bcurry','supersecret3','1947-11-11'),(3,'Karen','Mack','kmack','supersecret4','1986-07-08'),(4,'Dianne','Klein','dklein','supersecret5','1991-01-22'),(5,'Dawn','Tillman','dtillman','supersecret6','1979-08-30');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-19 15:12:27
+-- Dump completed on 2024-02-23 21:19:24
