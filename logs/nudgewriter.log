@@ -1075,3 +1075,27 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 [DEBUG] 2024-02-25 20:58:49.673 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
 [INFO ] 2024-02-25 20:58:49.693 [main] Database - Connection to SQL successful
 [DEBUG] 2024-02-25 20:59:07.065 [http-nio-8080-exec-4] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-26 00:29:26.269 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:28.755 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:28.871 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:29.135 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-26 00:29:29.169 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:29.246 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:29.318 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-26 00:29:29.402 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:29.464 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-26 00:29:29.500 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:29.577 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:29.693 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:29.761 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:29.949 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:30.055 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:30.150 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@7d156f8f, edu.matc.entity.NudgeSession@65d6640, edu.matc.entity.NudgeSession@2904bc56]
+[INFO ] 2024-02-26 00:29:30.170 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:30.280 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:30.343 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-26 00:29:30.380 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-26 00:29:30.458 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:30.505 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-26 00:29:30.531 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-26 00:29:47.331 [http-nio-8080-exec-6] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
