@@ -1099,3 +1099,233 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 [DEBUG] 2024-02-26 00:29:30.505 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
 [INFO ] 2024-02-26 00:29:30.531 [main] Database - Connection to SQL successful
 [DEBUG] 2024-02-26 00:29:47.331 [http-nio-8080-exec-6] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:51:56.081 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:00.484 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:00.607 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:00.958 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:52:00.984 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:01.141 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:01.237 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 21:52:01.471 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:01.532 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 21:52:01.580 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:01.688 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:01.861 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:01.981 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:02.164 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:02.265 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:02.357 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@7296fe0b, edu.matc.entity.NudgeSession@79ec57b8, edu.matc.entity.NudgeSession@66a8751a]
+[INFO ] 2024-02-28 21:52:02.371 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:02.478 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:02.538 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 21:52:02.568 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:52:02.644 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:52:02.701 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 21:52:02.714 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:15.026 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:19.040 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:19.178 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:19.419 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:54:19.443 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:19.524 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:19.589 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 21:54:19.657 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:19.716 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 21:54:19.751 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:19.842 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:19.970 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:20.076 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:20.225 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:20.315 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:20.437 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@7296fe0b, edu.matc.entity.NudgeSession@79ec57b8, edu.matc.entity.NudgeSession@66a8751a]
+[INFO ] 2024-02-28 21:54:20.454 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:20.581 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:20.637 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 21:54:20.703 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:54:20.831 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:54:20.900 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 21:54:20.952 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:24.375 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:28.286 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:28.410 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:28.683 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:56:28.699 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:28.806 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:28.872 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 21:56:28.980 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:29.065 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 21:56:29.112 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.224 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.429 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.510 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.695 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.761 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:29.845 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@7d156f8f, edu.matc.entity.NudgeSession@65d6640, edu.matc.entity.NudgeSession@2904bc56]
+[INFO ] 2024-02-28 21:56:29.858 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:29.950 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:30.000 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 21:56:30.015 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:56:30.105 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:56:30.161 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 21:56:30.184 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:49.526 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:52.354 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:52.471 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:52.715 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:57:52.739 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:52.824 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:52.876 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 21:57:53.006 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:53.061 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 21:57:53.097 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:53.202 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:53.331 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:53.421 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:53.562 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:53.771 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:53.947 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@451af781, edu.matc.entity.NudgeSession@672d8370, edu.matc.entity.NudgeSession@7bb25046]
+[INFO ] 2024-02-28 21:57:53.974 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:54.161 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:54.237 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 21:57:54.294 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:57:54.385 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:57:54.450 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 21:57:54.470 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:14.735 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:17.558 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:17.645 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:17.830 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 21:59:17.846 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:17.906 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:17.950 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 21:59:18.022 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:18.073 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 21:59:18.107 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.168 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.318 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.391 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.560 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.652 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:18.742 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@451af781, edu.matc.entity.NudgeSession@672d8370, edu.matc.entity.NudgeSession@7bb25046]
+[INFO ] 2024-02-28 21:59:18.754 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:18.890 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:18.943 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 21:59:19.007 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 21:59:19.079 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 21:59:19.126 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 21:59:19.141 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:15.574 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:17.774 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:17.854 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:18.068 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 22:00:18.104 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.196 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:18.240 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 22:00:18.329 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:18.384 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 22:00:18.433 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.516 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.623 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.674 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.757 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.845 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:18.908 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@64d93096, edu.matc.entity.NudgeSession@22002459, edu.matc.entity.NudgeSession@1e000a17]
+[INFO ] 2024-02-28 22:00:18.918 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:18.994 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:19.034 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 22:00:19.073 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:00:19.139 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:00:19.184 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 22:00:19.209 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:26.089 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:29.789 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:29.896 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:30.341 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 22:07:30.398 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:30.581 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:30.664 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 22:07:30.836 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:30.983 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 22:07:31.059 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:31.176 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:31.405 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:31.523 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:31.852 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:31.936 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:32.004 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@451af781, edu.matc.entity.NudgeSession@672d8370, edu.matc.entity.NudgeSession@7bb25046]
+[INFO ] 2024-02-28 22:07:32.021 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:32.142 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:32.197 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 22:07:32.236 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:07:32.329 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:07:32.383 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 22:07:32.426 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:51.808 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:53.988 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:54.109 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:54.310 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 22:17:54.334 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:54.413 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:54.458 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 22:17:54.516 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:54.562 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 22:17:54.609 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:54.713 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:54.849 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:54.924 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:55.009 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:55.091 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:55.158 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@32e65852, edu.matc.entity.NudgeSession@4f82248f, edu.matc.entity.NudgeSession@126af200]
+[INFO ] 2024-02-28 22:17:55.174 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:55.271 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:55.313 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 22:17:55.347 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:17:55.404 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:17:55.448 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 22:17:55.503 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:44.381 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:46.680 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:46.790 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:46.997 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 22:20:47.014 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.080 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:47.142 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 22:20:47.237 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:47.299 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 22:20:47.331 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.409 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.513 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.563 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.708 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.783 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:47.840 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@64d93096, edu.matc.entity.NudgeSession@22002459, edu.matc.entity.NudgeSession@1e000a17]
+[INFO ] 2024-02-28 22:20:47.863 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:47.960 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:48.018 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 22:20:48.061 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:20:48.121 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:20:48.166 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 22:20:48.192 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:06.527 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:10.071 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:10.212 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:10.493 [main] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
+[INFO ] 2024-02-28 22:25:10.520 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:10.623 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:10.684 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2024-02-28 22:25:10.790 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:10.851 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2024-02-28 22:25:10.896 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.008 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.193 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.305 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.478 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.573 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:11.664 [main] NudgeSessionDao - The list of sessions [edu.matc.entity.NudgeSession@49f50c8f, edu.matc.entity.NudgeSession@4a2d66e, edu.matc.entity.NudgeSession@2ac9e53c]
+[INFO ] 2024-02-28 22:25:11.677 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.793 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:11.852 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = T
+[INFO ] 2024-02-28 22:25:11.909 [main] Database - Connection to SQL successful
+[INFO ] 2024-02-28 22:25:11.984 [main] Database - Connection to SQL successful
+[DEBUG] 2024-02-28 22:25:12.050 [main] NudgeSessionDao - Searching for nudgeSession with sessionTitle = Test2
+[INFO ] 2024-02-28 22:25:12.089 [main] Database - Connection to SQL successful
