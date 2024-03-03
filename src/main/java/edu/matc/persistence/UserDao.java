@@ -120,7 +120,6 @@ public class UserDao {
         Session session = sessionFactory.openSession();
 
         logger.debug("Searching for user with {} = {}",  propertyName, value);
-
         HibernateCriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery(User.class);
         Root<User> root = query.from(User.class);
