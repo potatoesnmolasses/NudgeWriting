@@ -1,6 +1,7 @@
 package edu.matc.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDate;
@@ -11,9 +12,9 @@ import java.util.*;
  * Represents a user account and attributes
  * @author jgruel
  */
+@Data
 @Entity
 @Table(name = "user")
-//TODO to deploy, change database and table name
 public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")

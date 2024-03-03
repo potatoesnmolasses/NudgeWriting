@@ -2,6 +2,7 @@ package edu.matc.entity;
 
 
 import jakarta.persistence.*;
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
  * Represents a webapp writing session
  * @author jgruel
  */
+@Data
 @Entity(name = "NudgeSession")
 @Table(name = "session_test")
 //TODO to deploy, change database and table name
