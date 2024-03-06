@@ -2,6 +2,7 @@ package edu.matc.persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import edu.matc.util.PropertiesLoader;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
