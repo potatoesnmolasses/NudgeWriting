@@ -1,4 +1,4 @@
-package edu.matc.controller;
+package edu.matc.controller.authorization;
 
 
 import com.auth0.jwt.JWT;
@@ -250,9 +250,9 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             REDIRECT_URL = properties.getProperty("redirectURL");
             REGION = properties.getProperty("region");
             POOL_ID = properties.getProperty("poolId");
-        } catch (IOException ioException) {
-            logger.error("Cannot load properties..." + ioException.getMessage(), ioException);
-        } catch (Exception e) {
+        } //catch (IOException ioException) {
+            //logger.error("Cannot load properties..." + ioException.getMessage(), ioException);}
+        catch (Exception e) {
             logger.error("Error loading properties" + e.getMessage(), e);
         }
     }
