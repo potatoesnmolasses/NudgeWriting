@@ -14,16 +14,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class UserDaoTest {
     UserDao userDao;
+    GenericDao genericDao;
 
     @BeforeEach
     void setUp() {
+        genericDao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleanDB.sql");
     }
     @Test
     void getByIdSuccess() {
-        userDao = new UserDao();
-        User retrievedUser = userDao.getById(1);
+        User retrievedUser = (User)genericDao.getById(1);
         assertNotNull(retrievedUser);
         assertEquals("Joe", retrievedUser.getFirstName());
 
@@ -32,12 +33,12 @@ public class UserDaoTest {
     @Test
     void updateSuccess() {
         userDao = new UserDao();
-        User userToUpdate = userDao.getById(1);
+        User userToUpdate = (User)genericDao.getById(1);
         userToUpdate.setLastName("Smith");
-        userDao.update(userToUpdate);
+        genericDao.update(userToUpdate);
 
         // retrieve the user and check that the name change worked
-        User actualUser = userDao.getById(1);
+        User actualUser = (User)genericDao.getById(1);
         assertEquals("Smith", actualUser.getLastName());
 
     }
@@ -55,10 +56,9 @@ public class UserDaoTest {
 
     @Test
     void addSession() {
-        userDao = new UserDao();
         LocalDateTime now = LocalDateTime.now();
         NudgeSession nudge = new NudgeSession(1500, 45, "summary", now);
-        User retrievedUser = userDao.getById(2);
+        User retrievedUser = (User)genericDao.getById(2);
         retrievedUser.addSession(nudge);
 
         List<NudgeSession> sessionList = retrievedUser.getSessionList();
@@ -67,11 +67,9 @@ public class UserDaoTest {
 
     @Test
     void deleteSession() {
-        userDao = new UserDao();
-        User user = userDao.getById(1);
+        User user = (User)genericDao.getById(1);
         List <NudgeSession> sessionList = user.getSessionList();
         NudgeSession nudgeToDelete = sessionList.get(0);
-        //userDao.getById(1).removeSession(nudgeToDelete);
         user.removeSession(nudgeToDelete);
         List <NudgeSession> testList = user.getSessionList();
 
@@ -81,23 +79,22 @@ public class UserDaoTest {
 
     @Test
     void delete() {
-        userDao = new UserDao();
-        userDao.delete(userDao.getById(3));
-        assertNull(userDao.getById(3));
+        User user = (User)genericDao.getById(3);
+        genericDao.delete(user);
+        assertNull(genericDao.getById(3));
     }
 
     @Test
     void deleteWithSessions() {
-        userDao = new UserDao();
         //Get user and sessions from user
-        User userToDelete = userDao.getById(3);
+        User userToDelete = (User)genericDao.getById(3);
         List<NudgeSession> sessionList = userToDelete.getSessionList();
         int sessionNumber = sessionList.get(0).getId();
         //Delete user
-        userDao.delete(userToDelete);
-        assertNull(userDao.getById(3));
+        genericDao.delete(userToDelete);
+        assertNull(genericDao.getById(3));
         //verify
-        NudgeSessionDao sessionDao = new NudgeSessionDao();
+        GenericDao sessionDao = new GenericDao(NudgeSession.class);
         assertNull(sessionDao.getById(2));
 
     }

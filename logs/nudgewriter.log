@@ -1605,3 +1605,10 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 [INFO ] 2024-03-07 18:27:40.210 [main] Database - Connection to SQL successful
 [DEBUG] 2024-03-07 18:27:48.466 [http-nio-8080-exec-4] UserDao - The list of users [User{id=1, userName='jcoyne', password='supersecret1', firstName='Joe', lastName='Coyne', dateOfBirth=1964-03-30}, User{id=2, userName='bcurry', password='supersecret3', firstName='Barney', lastName='Curry', dateOfBirth=1947-11-10}, User{id=3, userName='kmack', password='supersecret4', firstName='Karen', lastName='Mack', dateOfBirth=1986-07-07}, User{id=4, userName='dklein', password='supersecret5', firstName='Dianne', lastName='Klein', dateOfBirth=1991-01-21}, User{id=5, userName='dtillman', password='supersecret6', firstName='Dawn', lastName='Tillman', dateOfBirth=1979-08-29}]
 [DEBUG] 2024-03-07 18:28:06.647 [http-nio-8080-exec-1] UserDao - Searching for user with lastName = cur
+[INFO ] 2024-03-13 00:20:46.395 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:25:35.081 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:29:23.228 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:30:49.466 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:31:22.447 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:34:22.059 [main] Database - Connection to SQL successful
+[INFO ] 2024-03-13 00:36:47.075 [main] Database - Connection to SQL successful
