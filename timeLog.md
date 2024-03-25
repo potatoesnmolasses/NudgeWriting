@@ -63,9 +63,9 @@
 3/2 - Still accruing charges.  ~3 hours of working on those issues.  Was able to resolve by making DB private - can't connect to DB via IntelliJ but still can through the deployed app.  If charges no longer occur I can live with it.  :)
 
 ### Week 8
-Had a family emergency this week!  Had some time while working on my second Learning Tracker entry to consider how to improve my organization for project/other work moving forward.  I have decided to keep a temporary timelog on my desktop to encourage me to record my work hours in real time.
+Had a family emergency this week (everything turned out okay)!  Had some time while working on my second Learning Tracker entry to consider how to improve my organization for project/other work moving forward.  I have decided to keep a temporary timelog on my desktop to encourage me to record my work hours in real time.
 
-Was able to 
+Was able to resolve AWS charges/received a refund.
 ### Week 9
 3/19 - 30 minutes team project video lecture + brainstorming.
 
