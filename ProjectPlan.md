@@ -52,48 +52,67 @@
 
 
 ### Week 6 - AWS
-- [ ] Create controller - send to NudgeSession search results jsp
+- [X] Create controller - send to NudgeSession search results jsp
 - [ ] Replicate above steps for Goals (possible many-to-many with NudgeSession in the middle)
-- [ ] Fully test SessionDao - implementing Hibernate
-- [ ] Fully test GoalDao - implementing Hibernate
-- [ ] Implement Log4J for logging
-- [ ] Continue research on Web Services to incorporate
-- [ ] Update time log journal
+- [X] Fully test SessionDao - implementing Hibernate
+- [X] Fully test GoalDao - implementing Hibernate
+- [X] Implement Log4J for logging
+- [X] Continue research on Web Services to incorporate
+- [X] Update time log journal
 
 ### Week 7 - Authentication
 #### Checkpoint 2 is Due: Database designed and created, at least one DAO with full CRUD (create, read, update, delete) implemented with Hibernate, DAO is fully unit tested, Log4J is implemented (no System.out.printlns)
-- [ ] Double-check all checkpoint 2 items (above) are complete and visible in github.
-- [ ] Set up Authentication in indie project 
-- [ ] Create project DB on AWS.
-- [ ] Update project config files for AWS as needed
-- [ ] Deploy project to AWS
-- [ ] Add deployed link to indie project list in student repo
-- [ ] Update time log journal
+- [X] Double-check all checkpoint 2 items (above) are complete and visible in github.
+- [X] Set up Authentication in indie project 
+- [X] Create project DB on AWS.
+- [X] Update project config files for AWS as needed
+- [X] Deploy project to AWS
+- [X] Add deployed link to indie project list in student repo (as of 3/25 may need to update again)
+- [X] Update time log journal
 
 ### Week 8 - Web Services
 #### User story focus: Generate Story Prompts 
-- [ ] Consume RESTful Web Service in IntelliJ 
+- [X] Consume RESTful Web Service in IntelliJ 
 - [ ] Expand on active Session modes - Zen and Accountability
-- [ ] Implement "punishment" for Session grace period timeout
-- [ ] Update time log journal
+- [X] Implement "punishment" for Session grace period timeout (sound)
+- [X] Update time log journal
 
 ### Week 9 (Start of the team project)
 #### Checkpoint 3 is Due: Deployed to AWS, at least one JSP that displays data from the database is implemented, authentication implemented, add AWS deployed app link to indie project list in student repo.
 - [ ] Double-check all checkpoint 3 items (above) are complete and visible in github.
+- [ ] Fully upgrade to GenericDao
+- [ ] create Goals entity and unit test the dao
+- [ ] Review methods to erase text during the session - to incorporate for second punishment 
 - [ ] Update time log journal
 
 ### Week 10 - Team project work
 - [ ] Review and incorporate REST best practices
-- [ ] For View Goals user story: implement line chart from web service @ https://free-web-services.com/
+- [ ] decide on CSS theming
+- [ ] create homepage - if user is not signed in, prompt sign in to save session (>sign in page) or start session (>session settings page). For signed in user, only "start session"
+- [ ] create session settings page. User can create a new Goal or choose an existing one (including Default), and choose their desired settings for the session. (Begin Session > session page)
+- [ ] create session page - minimal text box/countdown. User can continue past time limit. Actual word count stored separately from at-time wcg. (Complete session > completion page)
+- [ ] create session completion page. For anonymous user, give option to copy text to clipboard. Display average wpm, total word count. For known user, option to redirect to session list page
 - [ ] Update time log journal
 
 ### Week 11 - Team project work
+- [ ] create sign in page and redirect (successful sign in > homepage)
+- [ ] create sign out and redirect (successful sign out > homepage)
+- [ ] create session list page: display individual sessions, including stats, on session list page. This will be a jquery table with child rows that display an optional summary of the session or a preview of the session writing, along with a link to an individual page where the full session can be viewed. (Child rows in jquery: https://datatables.net/examples/api/row_details.html). Sessions should be searchable by title, session content, and Goals.
+- [ ] Create option for ChatGPT to provide writing prompts based on Session content on Session page (do not implement yet)
 - [ ] Update time log journal
 
 ### Week 12
+- [ ] create Goals page, which displays a list of goals, click through to individual Goals page
+- [ ] Create individual Goals display page, which shows Goal progress (if start/end date is set) and associated Nudge Sessions
+- [ ] Clean up CSS/ page views
+- [ ] (optional) draw vector art for "storyline" positive reinforcement
 - [ ] Update time log journal
 
 ### Week 13 - Enterprise Java Beans
+- [ ] (optional) user can add an offsite Session to Goals page on a date of choice
+- [ ] (optional) incorporate JavaScript graphs to display statistics
+- [ ] (optional) user does not receive "complete session" option until at-time wcg is met
+- [ ] (optional) session summary
 - [ ] Update time log journal
 
 
