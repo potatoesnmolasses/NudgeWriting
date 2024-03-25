@@ -44,13 +44,42 @@
  
 ### Week 6
 2/20 - 1 hour, watching AWS Elastic Beanstalk video lectures
+
 2/22 - 30 minutes, researching AI for prompt generation
+
 2/24 - 1.5 hour, met with Oscar for project reviews
+
 2/25 - 2 hours, deployed to AWS
 
 ### Week 7
 2/26 - noticed I am accruing AWS charges, ~2 hours of troubleshooting.  Reached out to AWS support.
+
 2/27 - spoke with AWS Support.  Still accruing charges.  1 hour watching Cognito video lectures.  Will set it up once I have billing issue resolved
+
 2/29 - 1 hour researching and writing JS code for project.  The wordcount code is implemented.
+
 3/1 - 2 hours writing JS code for project.  Not yet implemented but grace period/ "punishment" in progress.
+
 3/2 - Still accruing charges.  ~3 hours of working on those issues.  Was able to resolve by making DB private - can't connect to DB via IntelliJ but still can through the deployed app.  If charges no longer occur I can live with it.  :)
+
+### Week 8
+Had a family emergency this week!  Had some time while working on my second Learning Tracker entry to consider how to improve my organization for project/other work moving forward.  I have decided to keep a temporary timelog on my desktop to encourage me to record my work hours in real time.
+
+Was able to 
+### Week 9
+3/19 - 30 minutes team project video lecture + brainstorming.
+
+3/20 
+  * 1 hour meeting with project teammates
+  * 30 minutes writing problem statement
+
+3/21
+  * 1 hour brainstorming indie project plan
+
+### Week 10
+
+### Week 11
+
+### Week 12
+
+### Week 13
